@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarifier Design Calculator - HRSCC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clarifier Design Calculator - HRSCC</h1>
+    </header>
+    <main>
+        <form id="clarifierForm">
+            <label for="volume">Volume (m³):</label>
+            <input type="number" id="volume" name="volume" required>
+
+            <label for="flowRate">Flow Rate (m³/jam):</label>
+            <input type="number" id="flowRate" name="flowRate" required>
+
+            <label for="surfaceOverflowRate">Surface Overflow Rate (m³/m².jam):</label>
+            <input type="number" id="surfaceOverflowRate" name="surfaceOverflowRate" required>
+
+            <label for="depth">Depth (m):</label>
+            <input type="number" id="depth" name="depth" required>
+            
+            <label for="flocculationTime">Flocculation Time (menit):</label>
+            <input type="number" id="flocculationTime" name="flocculationTime" required>
+
+            <label for="sludgeDepth">Sludge Depth (m):</label>
+            <input type="number" id="sludgeDepth" name="sludgeDepth" required>
+
+            <button type="button" onclick="calculateClarifier()">Calculate</button>
+        </form>
+
+        <section id="results">
+            <h2>Results</h2>
+            <p id="retentionTime"></p>
+            <p id="surfaceArea"></p>
+            <p id="diameter"></p>
+            <p id="inletFlowVelocity"></p>
+            <p id="clarifierVolume"></p>
+            <p id="flocculationZoneVolume"></p>
+            <p id="sludgeZoneVolume"></p>
+        </section>
+    </main>
+    <footer>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-alfi-syahri/" target="_blank">Muhammad Alfi Syahri</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
